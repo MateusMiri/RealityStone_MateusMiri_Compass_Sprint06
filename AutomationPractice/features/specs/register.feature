@@ -9,10 +9,15 @@ Funcionalidade: Cadastro
 
     Contexto: Estar na página de Login
     Dado que esteja na Página de Login
-    E acesse o formulário de Cadastro com um E-mail válido
 
     Cenário: Validar cadastro
-        Quando preencher todos os campos do formulário de Cadastro
+        Quando acessar o formulário de Cadastro com um E-mail válido
+        E preencher todos os campos do formulário de Cadastro
         Então o cadastro deverá ser realizado com sucesso
+
+    @register_conflict
+    Cenário: Validar Duplicidade de Cadastro
+        Quando acessar o formulário de Cadastro com um E-mail já registrado
+        Então deverá exibir uma mensagem de E-mail já cadastrado
 
 
