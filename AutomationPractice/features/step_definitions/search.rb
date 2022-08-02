@@ -3,10 +3,6 @@ Dado("que esteja na home") do
     @home_page.load
   end
 
-Quando('realizar a busca pela Barra de Busca na Header da página') do
-  @home_page.search_for('Dresses')
-end
-
 Então('deverão ser exibidos resultados de busca') do
   @search_results_page = Pages::SearchResults.new
   expect(@search_results_page).to have_products

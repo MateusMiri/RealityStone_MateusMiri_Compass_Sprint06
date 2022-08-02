@@ -1,6 +1,6 @@
-# Challenge - Sprint 5
-Repositório criado para o Estágio de Automação em QA da [Compass.uol](https://compass.uol/).  
-Estão presentes arquivos de Mapa Mental do E-Commerce AutomationPractice, criado com o intuito de direcionar a implementação da Automação de Testes, também estão presentes, além dos arquivos de automação de exemplos utilizados em aulas, todos os aquivos e códigos de Implementação de Automação de Testes do E-Commerce AutomationPractice, incluindo Gherkins.
+# Challenge - Sprint 6
+Repositório criado como trabalho final do Estágio de Automação em QA da [Compass.uol](https://compass.uol/).  
+Estão aqui presentes todos os aquivos e códigos de Implementação de Automação de Testes do E-Commerce Automation Practice, além do Plano de Testes, Relatório De execução, Mapa Mental e Report.
 Tudo aqui presente foi desenvolvido a partir dos conhecimentos adquiridos através das Master Classes e artigos disponibilizados pela [Compass.uol](https://compass.uol/).  
 
 ## Pré-Requisitos
@@ -56,14 +56,14 @@ Além deste comando, outros comandos utilizados e que você também pode achar �
 > git push origin main - Para enviar os Commits locais para o Repositório remoto do GitHub.  
 
 # Automação de Testes
-A Automação de Testes do E-commerce Automation Practice foi realizada cobrindo parte vital do E-commerce, que incluíram testes de:
+A Automação de Testes do E-commerce Automation Practice foi realizada cobrindo o front-end da aplicação, que incluíram testes de:
 * Login;  
 * Cadastro;  
 * Busca;  
 * Pagamentos através de Cheque e Transferência Bancária, indo desde a página de produto até a finalização da compra;  
 * Página do Produto: incluindo alteração de quantidade, cor, tamanho;
-* Carrinho.
-Além destes, outros testes tinham intuito de serem realizados, mas acabaram não sendo devido ao tempo disponível e atrasos que ocorreram a partir de algumas dificuldades.
+* Catálogo;
+* Carrinho.  
 
 ## Execução
 Todos os Cenários possuem a tag @regression, podendo serem executados juntos a qualquer momento, além de outras tags individuais de cada cenário, que podem ser observadas nos arquivos de Gherkin incluídos no projeto.  
@@ -71,10 +71,6 @@ Para executar os testes, pode-se utilizar do seguinte comando:
 > cucumber -p default -t@regression  
 
 OBS: Para você conseguir executar os testes acima, você deve ter todos os Pré-Requisitos listados neste documento.  
-
-## Conclusão
-O E-commerce AutomationPractice se apresenta como sendo um E-commerce muito instável, sendo lento e ficando várias vezes indisponível durante o processo de testes.  
-Os testes em si não mostraram ISSUEs dentro do site, porém, deve-se comentar de que ele não realiza qualquer tipo de validação entre a correlação das informações de endereço, a única validação que existe é de formato, por exemplo, zip-code deve ser em formato 00000. Mas não existe qualquer verificação se as informações ali postas são verdadeiras, o que gerará problemas no momento de entrega das compras.  
 
 
 ## Tecnologias Utilizadas
@@ -121,6 +117,7 @@ E-mail: mateusmiri19@gmail.com
 [MIT](https://choosealicense.com/licenses/mit/) - Copyright © 2022 Mateus Miri  
 
 ## Agradecimentos
-Agradeço à toda equipe Compass pelo apoio no compartilhamento e em todas as partes do processo do estágio e programa de bolsas.  
-Agradeço, em especial, aos colegas Matheus Maschio, Luiza Tonatto e Daniel Merib pela ajuda e troca de conhecimentos durante a Sprint.  
-Agradeço à toda turma do Programa de Bolsas, pela constante troca de ideias e ajuda durante o estágio.
+Agradeço toda a equipe Compass pelo apoio no compartilhamento e em todas as partes do processo do estágio e programa de bolsas.  
+Agradeço, em especial, aos colegas Matheus Maschio e Luiza Tonatto pela ajuda e troca de conhecimentos durante a Sprint.  
+Agradeço toda a turma do Programa de Bolsas, pela constante troca de ideias e ajuda durante o estágio.
+Por fim, agradeço novamente a equipe Compass pela oportunidade, paciência e troca de conhecimentos durante este período de Estágio, espero termos oportunidades de desenvolver diferentes trabalhos no futuro.  

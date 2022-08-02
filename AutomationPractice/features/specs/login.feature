@@ -3,12 +3,12 @@
 @regression
 @login
 Funcionalidade: Login
-    Como usuário do E-commerce AutomationPractice
+    Como usuário do E-commerce Automation Practice
     Quero realizar login na plataforma
     Para realizar compras
 
     Contexto:
-    Dado que esteja na Página de Login 
+        Dado que esteja na Página de Login 
 
     Esquema do Cenário: Login Inválido
         Quando o usuário do E-commerce inserir "<e-mail>" e "<senha>" inválidos 

@@ -3,7 +3,7 @@
 @regression
 @search
 Funcionalidade: Busca
-    Como usuário do E-commerce AutomationPractice
+    Como usuário do E-commerce Automation Practice
     Quero realizar uma busca de produtos
     Para ter uma melhor experiência de compra
 
@@ -11,11 +11,6 @@ Funcionalidade: Busca
         Dado que esteja na home
     
     @search_for_product
-    Cenário: Busca por produto
-        Quando realizar a busca pela Barra de Busca na Header da página
-        Então deverão ser exibidos resultados de busca
-
-    @search_for_different_product
     Esquema do Cenário: Buscar por diferentes produtos
         Quando realizar a busca pela Barra de busca por produtos "<produtos>"
         Então deverão ser exibidos resultados de busca

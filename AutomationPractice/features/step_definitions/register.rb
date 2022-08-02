@@ -1,4 +1,3 @@
-# Cadastro Válido
 Quando('acessar o formulário de Cadastro com um E-mail válido') do
     @login_page.input_email_for_register.set Factory::Dynamic.dynamic_data[:register_email]
     @login_page.btn_submit_email.click
@@ -15,7 +14,6 @@ Quando('acessar o formulário de Cadastro com um E-mail válido') do
     expect(@my_account_page.login_success_message.text).to have_content Factory::Static.static_data[:welcome_message]
   end
 
-  # Cadastro com Duplicidade de E-mail
   Quando('acessar o formulário de Cadastro com um E-mail já registrado') do
     @login_page.input_email_for_register.set Factory::Static.static_data[:email]
     @login_page.btn_submit_email.click

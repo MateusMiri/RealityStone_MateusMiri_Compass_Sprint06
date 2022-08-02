@@ -3,7 +3,6 @@ Dado('que esteja na página do Produto') do
     @pdp.load
   end
   
-  #change_color
   Quando('alterar a cor do produto na PDP') do
     @product_image_before = @pdp.product_image['src'] 
     @pdp.colors(0)
@@ -13,8 +12,6 @@ Dado('que esteja na página do Produto') do
     expect(@pdp.product_image['src']).not_to eql @product_image_before
   end
 
-
-  #change_size
   Quando('alterar o tamanho do produto na PDP') do
     @product_size_before = @pdp.selected_size
     @pdp.size_change(1)
@@ -24,7 +21,6 @@ Dado('que esteja na página do Produto') do
     expect(@pdp.selected_size.text).to eql "M"
   end
 
-  #change_quantity
   Quando('alterar a quantidade do produto na PDP') do
     @pdp.btn_increase_quantity.click
   end
